@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Avatar from './Avatar';
 import Author from './Author';
 import Time from './Tme';
+import Message from './Message';
 
 const Tweet = () => {
   return (
@@ -14,6 +15,9 @@ const Tweet = () => {
           <div className="tweet-content-head">
             <Author />
             <Time />
+          </div>
+          <div className="tweet-content-body">
+            <Message />
           </div>
         </div>
       </StyledTweet>
@@ -48,6 +52,10 @@ const StyledTweet = styled.div`
       align-items: center;
       flex-direction: column;
     }
+
+    &-body {
+      text-align: center;
+    }
   }
 
   @media (min-width: 499px) {
@@ -65,6 +73,10 @@ const StyledTweet = styled.div`
       &-head {
         justify-content: space-between;
         flex-direction: row;
+      }
+
+      &-body {
+        text-align: left;
       }
     }
   }
