@@ -1,9 +1,13 @@
-import React from 'react';
+import NormalizeStyles from './NormalizeStyles';
+import BaseStyles from './BaseStyles';
+import Tweet from './components/Tweet';
 
 function App() {
   return (
     <>
-      <h1>Tweet</h1>
+      <NormalizeStyles />
+      <BaseStyles />
+      <Tweet />
     </>
   );
 }
