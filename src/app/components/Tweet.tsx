@@ -3,6 +3,10 @@ import Avatar from './Avatar';
 import Author from './Author';
 import Time from './Tme';
 import Message from './Message';
+import ReplyButton from './ReplyButton';
+import RetweetButton from './RetweetButton';
+import LikeButton from './LikeButton';
+import MoreOptionsButton from './MoreOptionsButton';
 
 const Tweet = () => {
   return (
@@ -12,12 +16,18 @@ const Tweet = () => {
           <Avatar />
         </div>
         <div className="tweet-content">
-          <div className="tweet-content-head">
+          <div className="tweet-content-header">
             <Author />
             <Time />
           </div>
           <div className="tweet-content-body">
             <Message />
+          </div>
+          <div className="tweet-content-footer">
+            <ReplyButton />
+            <RetweetButton />
+            <LikeButton />
+            <MoreOptionsButton />
           </div>
         </div>
       </StyledTweet>
@@ -37,17 +47,18 @@ const StyledTweet = styled.div`
 
   .tweet-avatar {
     background-color: lightGray;
-    border: 1px solid black;
+    border: 1px solid gray;
     margin: auto;
     width: 100%;
-    width: 80px;
+    max-width: 80px;
+    max-height: 80px;
   }
 
   .tweet-content {
     margin-top: 1rem;
     width: 100%;
 
-    &-head {
+    &-header {
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -55,6 +66,22 @@ const StyledTweet = styled.div`
 
     &-body {
       text-align: center;
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: center;
+
+      button {
+        margin: 0;
+        padding: 0;
+
+        span {
+          font-size: 1.65rem;
+          margin: 0;
+          width: 40px;
+        }
+      }
     }
   }
 
@@ -70,13 +97,21 @@ const StyledTweet = styled.div`
       margin-top: 0;
       padding: 0 1rem;
 
-      &-head {
+      &-header {
         justify-content: space-between;
         flex-direction: row;
       }
 
       &-body {
         text-align: left;
+      }
+
+      &-footer {
+        justify-content: start;
+
+        button {
+          margin: 0 2rem 0 -1rem;
+        }
       }
     }
   }

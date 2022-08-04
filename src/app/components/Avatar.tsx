@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Avatar = () => {
   return (
     <StyledAvatar>
-      <span className="material-symbols-outlined">person</span>
+      <span className="material-icons">person</span>
     </StyledAvatar>
   );
 };
