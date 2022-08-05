@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { DEFAULT_COLOR, GRAY_TEXT } from '../utils/styles';
+import { PRIMARY_COLOR, GRAY_TEXT } from '../utils/styles';
 
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   disableShadow?: boolean;
@@ -40,7 +40,7 @@ export const StyledButton = styled.button<ButtonProps>`
   background-color: transparent;
   border-radius: 6px;
   border-width: 0px;
-  color: ${DEFAULT_COLOR};
+  color: ${PRIMARY_COLOR};
   cursor: pointer;
   text-align: center;
   margin: 1rem;
@@ -85,14 +85,14 @@ export const StyledButton = styled.button<ButtonProps>`
   }
 
   &:disabled {
-    background-color: ${DEFAULT_COLOR};
+    background-color: ${PRIMARY_COLOR};
     border: none;
     box-shadow: none;
     color: ${GRAY_TEXT};
     cursor: inherit;
 
     &:hover {
-      background-color: ${DEFAULT_COLOR};
+      background-color: ${PRIMARY_COLOR};
     }
   }
 

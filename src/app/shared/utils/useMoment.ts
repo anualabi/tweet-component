@@ -19,4 +19,4 @@ moment.updateLocale('en', {
   }
 });
 
-export const momentFromNow = (x: number[]) => moment(x).fromNow();
+export const momentFromNow = (x: number[]) => moment(x).fromNow(true);
