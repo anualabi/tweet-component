@@ -1,7 +1,7 @@
 import { ITweet } from '../types/tweet';
 
-export const post: ITweet = {
-  message: 'I enjoy using react with typescript!',
+export const tweet: ITweet = {
+  message: 'Do you enjoy using react with typescript?',
   gravatar: 'https://en.gravatar.com/avatar/',
   author: {
     handle: 'mrsmith',
