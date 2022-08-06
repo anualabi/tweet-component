@@ -6,7 +6,7 @@ import { ITweet } from '../../shared/types/tweet';
 
 type ITime = Pick<ITweet, 'timestamp'>;
 
-const Time = ({ timestamp }: ITime) => {
+export const Time = ({ timestamp }: ITime) => {
   const publishDate = formatTimeStamp(timestamp);
 
   return <StyledTime>{momentFromNow(publishDate)}</StyledTime>;
@@ -18,5 +18,3 @@ const StyledTime = styled.p`
   font-weight: bold;
   margin: 0;
 `;
-
-export default Time;

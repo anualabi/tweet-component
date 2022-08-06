@@ -28,6 +28,17 @@ export const StyledTweet = styled.div`
   }
 `;
 
+export const StyledTweetHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 499px) {
+    flex-direction: row;
+    align-items: start;
+  }
+`;
+
 export const StyledTweetButtons = styled.div`
   display: flex;
   justify-content: center;

@@ -4,7 +4,7 @@ import { ITweet } from '../../shared/types/tweet';
 
 type IAuthor = Pick<ITweet, 'author'>;
 
-const Author = ({ author }: IAuthor) => {
+export const Author = ({ author }: IAuthor) => {
   const { name, handle } = author;
   return (
     <StyledAuthor>
@@ -53,5 +53,3 @@ const StyledAuthor = styled.div`
     }
   }
 `;
-
-export default Author;
