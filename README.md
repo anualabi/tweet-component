@@ -9,7 +9,7 @@
 
 ### Overview
 
-![screenshot](https://user-images.githubusercontent.com/33486765/182989907-8f2bfc9a-1111-4d6e-90e6-1ff91bc24b5f.png)
+![screenshot](https://user-images.githubusercontent.com/33486765/183232814-e4cfad0c-d66c-4d4e-907c-3f03e180e8b8.png)
 
 ### Built With
 
