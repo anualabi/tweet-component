@@ -1,7 +1,7 @@
 import Avatar from './TweetAvatar/TweetAvatar';
 import { Author, Time } from './TweetHeader';
 import TweetMessage from './TweetMessage/TweetMessage';
-import { LikeButton, ReplyButton, RetweetButton, ShareButton } from './TweetFooter';
+import { CommentButton, LikeButton, RetweetButton, ShareButton } from './TweetFooter';
 import { ITweet } from '../shared/types/tweet';
 import { StyledTweet, StyledTweetHeader, StyledTweetButtons } from './TweetStyles';
 
@@ -19,9 +19,9 @@ const Tweet = ({ tweet }: IProps) => {
           </StyledTweetHeader>
           <TweetMessage message={tweet.message} />
           <StyledTweetButtons>
-            <LikeButton likes={tweet.likes} />
-            <ReplyButton comments={tweet.comments} />
+            <CommentButton comments={tweet.comments} />
             <RetweetButton retweets={tweet.retweets} />
+            <LikeButton likes={tweet.likes} />
             <ShareButton />
           </StyledTweetButtons>
         </div>

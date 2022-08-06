@@ -3,7 +3,7 @@ import { ITweet } from '../../shared/types/tweet';
 
 type IComments = Pick<ITweet, 'comments'>;
 
-export const ReplyButton = ({ comments }: IComments) => {
+export const CommentButton = ({ comments }: IComments) => {
   return (
     <Button startIcon="message" size="sm">
       {comments > 0 && comments}
